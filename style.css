@@ -1,0 +1,68 @@
+html{
+    margin: 0;
+}
+
+.container{
+    width: 50%;
+  height: 825px;
+
+    margin: 2px;
+    align-items: center;
+    padding: 1.8rem 0 0 0 ;
+    text-align: center;
+    background-color: rgb(34, 44, 52);
+
+}
+.container h1{
+    font-size: 40px;
+    color: deepskyblue;
+}
+
+span{
+    color: orange;
+    font-style:normal;
+}
+
+#Height,#Weight{
+    /* border-radius:px; */
+    margin-left: 8px;
+}
+
+button{
+    /* padding-left:; */
+    margin-left: 80px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    border-color: aqua;
+    border-radius: 8px;
+    background-color: orange;
+    /* transition: ease-out; */
+    /* transition-duration: 0.5; */
+
+}
+
+button:hover{
+    background-color: chartreuse;
+    color: white;
+    
+}
+
+#result{
+    font-size: 35px;
+  margin-left: 90px;
+  margin-top: 20px;
+  color: rgb(10, 234, 115);
+}
+
+#weight-guide{
+     margin-left: 75px;
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+#weight-guide h3{
+    color:orange;
+    font-size: 24px;
+    
+}
