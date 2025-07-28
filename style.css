@@ -1,40 +1,83 @@
-html{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif, Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#012910,#f1961f);
+    animation:backgroundGradient 10s ease infinite;
+    background-size: 400% 400%;
+    
+}
+/* auto color changer technique */
+@keyframes backgroundGradient{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
 }
 
 .container{
-    width: 50%;
-  height: 825px;
-
-    margin: 2px;
-    align-items: center;
-    padding: 1.8rem 0 0 0 ;
+    background: rgb(204, 201, 208);
+    /* backdrop-filter:b */
+    /* backdrop-filter:; */
+    padding:2.5rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.30);
+    width: 90%;
+    max-width: 550px;
     text-align: center;
-    background-color: rgb(34, 44, 52);
-
+    transform: translateY();
+    animation: floatContainer 3s ease-in-out infinite;
+}
+/* moving container animation */
+@keyframes floatContainer{
+    0%,100%{transform: translateY(0);}
+    50%{transform: translateY(-10px);}
 }
 .container h1{
-    font-size: 40px;
-    color: deepskyblue;
+    font-size:2rem;
+    color: black;
+    margin-bottom: 1.3rem;
 }
 
 span{
-    color: orange;
+    color:lightcoral;
     font-style:normal;
 }
-
+.container label{
+    color:rgb(124, 89, 89);
+    
+}
 #Height,#Weight{
     /* border-radius:px; */
     margin-left: 8px;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 10px;
+    color: rgb(124, 101, 101);
+    /* align-items: center; */
+    /* content: counter(name); */
+    width: 25%;
+    height: 40px;
+    
 }
+
 
 button{
     /* padding-left:; */
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    width: 20%;
+    height: 30px;
     text-align: center;
     cursor: pointer;
     font-size: 15px;
-    border-color: aqua;
+    border-color:white;
     border-radius: 8px;
     background-color: orange;
     /* transition: ease-out; */
@@ -43,26 +86,37 @@ button{
 }
 
 button:hover{
-    background-color: chartreuse;
-    color: white;
+    background-color: rgb(134, 255, 13);
+    color: rgb(16, 1, 1);
     
 }
 
 #result{
     font-size: 35px;
-  margin-left: 90px;
+  /* margin-left: px; */
   margin-top: 20px;
   color: rgb(10, 234, 115);
 }
 
 #weight-guide{
-     margin-left: 75px;
+     /* margin-left: 75px; */
   margin-top: 25px;
   font-size: 20px;
 }
 
 #weight-guide h3{
-    color:orange;
+    color:rgb(90, 110, 147);
     font-size: 24px;
     
 }
+
+#weight-guide p{
+    margin-left: 20px;
+    color: #3f4642;
+}
+
+/* @media 414{
+    .container h1{
+        font-size: 1.8rem;
+    }
+} */
